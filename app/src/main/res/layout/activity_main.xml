@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></FrameLayout>
+
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Btn_sd"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:text="声音"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/Btn_dp"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:text="显示"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/Btn_stg"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:text="存储"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Btn_bind"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Bind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
